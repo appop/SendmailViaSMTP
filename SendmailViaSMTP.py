@@ -93,7 +93,7 @@ class Mail:
         if attachments:
             for attachment in attachments:
                 if not os.path.isfile(attachment):
-                    print 'WARNING: Unable to attach %s because it is not a file.' % attachment
+                    print ('WARNING: Unable to attach %s because it is not a file.' % attachment)
                     continue
 
                 ctype, encoding = mimetypes.guess_type(attachment)
