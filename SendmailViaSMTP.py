@@ -206,7 +206,7 @@ if __name__ == "__main__":
             logging.info('sending mail...')
             smtp.sendmail(mail)
             logging.info('all done.')
-        except Exception, e:
+        except Exception,e:
             logging.critical('[Exception]%s' % e)
     else:
         msg = '''ERROR: Mail content is EMPTY! Please specify one option of listed: piped-data, --file or --content.
